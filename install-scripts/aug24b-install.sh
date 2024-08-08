@@ -19,4 +19,4 @@ arch-chroot /mnt/gentoo useradd -m -G wheel,video,audio,input $USER
 echo Setting user password
 arch-chroot /mnt/gentoo passwd $USER
 echo Generating fstab
-genfstab /mnt/gentoo >>> /mnt/gentoo/etc/fstab
+genfstab /mnt/gentoo >> /mnt/gentoo/etc/fstab
