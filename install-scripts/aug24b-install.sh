@@ -20,3 +20,6 @@ echo Setting user password
 arch-chroot /mnt/gentoo passwd $USER
 echo Generating fstab
 genfstab /mnt/gentoo >> /mnt/gentoo/etc/fstab
+echo Generating locales
+nano /mnt/gentoo/etc/locale.gen
+arch-chroot /mnt/gentoo locale-gen
