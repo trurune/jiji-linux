@@ -9,11 +9,11 @@ echo "1) Use official mirror"
 echo "2) Use my own mirror"
 read $MIRRORCHOICE
 
-if [ $MIRRORCHOICE == "1" ]
+if [[ "$MIRRORCHOICE" == "1" ]];
 then
 export MIRROR="86.15.113.82"
 else
-read $MIRROR
+read MIRROR
 fi
 
 echo "Which version of JiJi would you like to use (lite)"
